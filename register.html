@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\style.css">
+    <title>Register</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box form-box">
+            <header>Sign Up</header>
+            <form action="login.php" method="post">
+                <div class="field input">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" autocomplete="off" required>
+                </div>
+
+                <div class="field input">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" autocomplete="off" required>
+                </div>
+
+                <div class="gender">
+                    <label for="gender">Gender</label>
+                    <br>
+                    <div class="genderForm label">
+                        <label>
+                            <input type="radio" name="gender" value="male"> Male
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="female"> Female
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="other"> Other
+                        </label>
+                    </div>
+                </div>
+
+                <div class="field input">
+                    <label for="dob">Date Of Birth</label>
+                    <input type="date" name="dob" id="dob" autocomplete="off" required>
+                </div>
+
+                <div class="field input">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" autocomplete="off" required>
+                </div>
+                
+                <div class="field input">
+                    <label for="password">Confirm Password</label>
+                    <input type="password" name="password" id="password" autocomplete="off" required>
+                </div>
+
+                <div class="button">
+                    
+                    <input type="submit" class="btn" name="submit" id="login" required>
+                </div>
+                
+                <div class="links">
+                    Already have a account? <a href="login.html">Log In</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
