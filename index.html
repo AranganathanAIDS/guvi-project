@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Edit User Details</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box form-box">
+            <header>Edit User Details</header>
+            <form id="editForm" action="edit.php" method="post">
+                <div class="field input">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" value="<?php echo $username; ?>" readonly>
+                </div>
+
+                <div class="field input">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" value="<?php echo $email; ?>" required>
+                </div>
+
+                <div class="gender">
+                    <label for="gender">Gender</label>
+                    <br>
+                    <div class="genderForm label">
+                        <label>
+                            <input type="radio" name="gender" value="male" <?php echo ($gender == 'male') ? 'checked' : ''; ?>> Male
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="female" <?php echo ($gender == 'female') ? 'checked' : ''; ?>> Female
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="other" <?php echo ($gender == 'other') ? 'checked' : ''; ?>> Other
+                        </label>
+                    </div>
+                </div>
+
+                <div class="field input">
+                    <label for="dob">Date Of Birth</label>
+                    <input type="date" name="dob" id="dob" value="<?php echo $dob; ?>" required>
+                </div>
+
+                <div class="field input">
+                    <label for="password">New Password</label>
+                    <input type="password" name="password" id="password" autocomplete="off" required>
+                </div>
+
+                <div class="button">
+                    <button type="submit" class="btn" name="submit">Save Changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
