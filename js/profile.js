@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $.ajax({
         type: 'GET',
-        url: 'get_profile_details.php',
+        url: 'php\profile.php',
         success: function(response){
             var profileData = JSON.parse(response);
             $('.top .box p b').eq(0).text(profileData.username);
